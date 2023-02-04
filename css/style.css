@@ -211,7 +211,7 @@
 }
 .baner2{
     width: 100%;
-    background-image: url(/img/testimonials_background.jpg.webp);
+    background-image: url(../img/testimonials_background.jpg.webp);
     height: 600px;
     text-align: center;
     display: flex;
