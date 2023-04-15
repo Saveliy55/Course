@@ -18,24 +18,19 @@
                     <img src="img/logo.png.webp" alt="">
                 <h2>COURSE</h2>
                 </div>
-                <p>HOME</p>
-                <p>ABOUT US</p>
-                <p>COURSES</p>
-                <p>ELEMENTS</p>
-                <p>NEWS</p>
-                <p>CONTACT</p>
+                <div class="list">
+                    <p>HOME</p>
+                    <p>ABOUT US</p>
+                    <p>COURSES</p>
+                    <p>ELEMENTS</p>
+                    <p>NEWS</p>
+                    <p>CONTACT</p>
+                </div>
                 <div class="menu" id="menu">
                     <span></span>
                 </div>
             </div>
-            <!-- <div class="activmenu">
-                <p>HOME</p>
-                <p>ABOUT US</p>
-                <p>COURSES</p>
-                <p>ELEMENTS</p>
-                <p>NEWS</p>
-                <p>CONTACT</p>
-                </div> -->
+           
             <div class="nomer">
                 <p>+43 4566 7788 2457</p>
             </div>
@@ -258,5 +253,13 @@
                 </div>
             </div>
         </div>
+        <script>
+            let menu = document.getElementById('menu')
+            let list = document.querySelector('.list')
+            menu.addEventListener('click',function(){
+                menu.classList.toggle('activemenu');
+                list.classList.toggle('listH');
+            })
+        </script>
 </body>
 </html>
