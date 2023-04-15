@@ -135,16 +135,6 @@
     justify-content: center;
     align-items: center;
 }
-/* .activmenu{
-    width: 300px;
-    height: 600px;
-    background-color: white;
-    display: none;
-} */
-/* .activmenu p{
-    padding: 20px;
-    font-size: 30px;
-} */
 .text3{
     width: 50%;
     height: 300px;
@@ -174,7 +164,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    /* margin-left: 130px; */
 }
 .center{
     width: 100%;
@@ -245,6 +234,10 @@
     display: flex;
     margin-top: 50px;
 }
+.list{
+    display: flex;
+    align-items: center;
+}
 .botom2{
     width: 100%;
     background-color: black;
@@ -292,41 +285,67 @@
     }
 }
 @media (max-width:990px) {
-    .top2 p{
-        display: none;
+    .list{
+        display: block;
+        position: absolute;
+        left: 0;
+        top:100px;
+        width: 391px;
+        height: 0px;
+        background-color: greenyellow;
+        overflow: hidden;
+        line-height: 33px;
+        
+    }
+    .listH{
+        height: 200px;
     }
     .top2 {
         display: flex;
         justify-content: space-around;
         width: 391px;
         align-items: center;
+        position: relative;
     }
     .menu{
         width: 30px;
         height: 40px;
+        position: relative;
     }
     .menu span{
         width: 30px;
         height: 5px;
         background-color: black;
         position: absolute;
-        top: 35px;
+        top: 18px;
+        display: block;
     }
-    .menu span::after{
+    .menu::after{
         width: 30px;
         height: 5px;
         background-color: black;
         position: absolute;
-        top: 16px;
+        top: 0px;
         content: '';
     }
-    .menu span::before{
+    .menu::before{
         width: 30px;
         height: 5px;
         background-color: black;
         position: absolute;
-        bottom: -30px;
+        bottom: 0px;
         content: '';
+    }
+    .activemenu span{
+        transform: scale(0);
+    }
+    .activemenu::before{
+        transform: rotate(-45deg);
+        bottom: 20px;
+    }
+    .activemenu::after{
+        transform: rotate(45deg);
+        top: 14px;
     }
     .cart{
         width: 100%;
